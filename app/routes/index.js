@@ -10,6 +10,9 @@ export default Ember.Route.extend({
       var newComputer = this.store.createRecord('computer', params);
       newComputer.save();
       this.transitionTo('index');
+    },
+    login() {
+      $('.ui.small.modal').modal('show');
     }
   }
 });

@@ -15,7 +15,7 @@ export default Ember.Route.extend({
       RAM: this.get('RAM'),
       CPU: this.get('CPU'),
       Hardrive: this.get('Hardrive')
-    }
+    };
     Object.keys(params).forEach(function(key) {
       if(params[key]!==undefined) {
         computer.set(key, params[key]);

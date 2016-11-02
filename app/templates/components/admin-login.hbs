@@ -1,0 +1,21 @@
+<div class="ui small modal">
+  <i class="close icon large"></i>
+  <div class="header">Post a question</div>
+  <div class="content">
+    <form id="add-post">
+      <div class="form-group">
+        {{input value=username id="username" placeholder="choose a username" class="form-control"}}
+      </div>
+      <div class="form-group">
+        {{input value=title id="title" placeholder="title" class="form-control"}}
+      </div>
+      <div class="form-group">
+        {{textarea class="form-control" value=content id="content" placeholder="content"}}
+      </div>
+      <button class="ui basic button">
+        <i class="comments outline icon"></i>
+        Post!
+      </button>
+    </form>
+  </div>
+</div>
