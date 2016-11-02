@@ -1,18 +1,17 @@
+{{display-cart item}}
 
+<div class="ui segment">
+  <h2>Our Computers</h2>
 {{#each model as |computer|}}
-  <div class="ui container">
-    {{#link-to 'editComputer' computer.id}} 
-    {{computer.make}}
-    {{computer.type}}
-    {{computer.CPU}}
-    {{computer.Hardrive}}
-    {{computer.RAM}}
-    {{computer.price}}
-    {{/link-to}}
+  <div class="ui segment">
+    {{computer-tile computer=computer}}
   </div>
 {{/each}}
+</div>
 
 <br>
 <br>
 
-{{new-computer saveComputer="saveComputer"}}
+<div class="ui segment">
+  {{new-computer saveComputer="saveComputer"}}
+</div>
