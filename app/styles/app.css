@@ -1,3 +1,11 @@
 #indexBody {
   padding-top: 50px;
 }
+
+input {
+  width = 200px;
+}
+
+#login-form  label {
+  color: white;
+}

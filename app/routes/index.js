@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     login() {
-      $('.ui.small.modal').modal('show');
+      $('.ui.basic.modal').modal('show');
     }
   }
 });

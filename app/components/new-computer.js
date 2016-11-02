@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   actions: {
     saveComputer() {
       var params = {
-        price: this.get('price'),
+        price: parseInt(this.get('price')),
         type: this.get('type'),
         make: this.get('make'),
         CPU: this.get('CPU'),

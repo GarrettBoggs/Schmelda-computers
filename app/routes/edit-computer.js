@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   actions: {
     edit(computer, params) {
     var params = {
-      price: this.get('price'),
+      price: parseInt(this.get('price')),
       type: this.get('type'),
       make: this.get('make'),
       RAM: this.get('RAM'),
