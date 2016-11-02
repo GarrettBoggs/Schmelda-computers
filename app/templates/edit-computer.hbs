@@ -1,0 +1,57 @@
+<h1>Your selected Computer:</h1>
+
+
+<div class="ui segment" id="question-box">
+  <div>
+    <h2>{{model.make}}</h2>
+    <h3>{{model.type}}</h3>
+    <h3>{{model.RAM}}</h3>
+    <h3>{{model.CPU}}</h3>
+    <h3>{{model.Hardrive}}</h3>
+    <h2>${{model.price}}</h2>
+  </div>
+</div>
+
+<h1>Edit this Computer</h1>
+<div class="ui form">
+
+  <form>
+    <div class="field">
+      <label for="price">Price</label>
+      {{input value=price id="price" value=model.price}}
+    </div>
+
+    <div class="field">
+      <label for="type">Type</label>
+      {{input value=type id="type" value=model.type}}
+    </div>
+
+    <div class="field">
+      <label for="make">Make</label>
+      {{input value=make  id="make" value=model.make}}
+    </div>
+
+    <div class="field">
+      <label for="RAM">RAM</label>
+      {{input value=RAM id="RAM" value=model.RAM}}
+    </div>
+
+    <div class="field">
+      <label for="CPU">CPU</label>
+      {{input value=CPU id="CPU" value=model.CPU}}
+    </div>
+
+    <div class="field">
+      <label for="Hardrive">Hardrive</label>
+      {{input value=Hardrive id="Hardrive" value=model.Hardrive}}
+    </div>
+
+  </form>
+
+  <div class="ui buttons">
+     <button class="primary ui button" {{action 'edit' model computer}}>Save Computer</button>
+     <div class="or"></div>
+     <button class="negative ui button" {{action 'delete' model}}>Delete Computer</button>
+  </div>
+
+</div>

@@ -1,0 +1,11 @@
+{{#each model as |computer|}}
+  {{#link-to 'editComputer' computer.id}} {{computer.price}} {{/link-to}}
+  {{computer.make}}
+  {{computer.type}}
+  {{computer.RAM}}
+{{/each}}
+
+<br>
+<br>
+
+{{new-computer saveComputer="saveComputer"}}

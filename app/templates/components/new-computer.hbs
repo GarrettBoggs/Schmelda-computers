@@ -1,0 +1,37 @@
+<div class="ui form">
+
+  <form>
+    <div class="field">
+      <label for="price">Price</label>
+      {{input value=price id="price"}}
+    </div>
+
+    <div class="field">
+      <label for="type">Type</label>
+      {{input value=type id="type"}}
+    </div>
+
+    <div class="field">
+      <label for="make">Make</label>
+      {{input value=make  id="make"}}
+    </div>
+
+    <div class="field">
+      <label for="RAM">RAM</label>
+      {{input value=RAM id="RAM"}}
+    </div>
+
+    <div class="field">
+      <label for="CPU">CPU</label>
+      {{input value=CPU id="CPU"}}
+    </div>
+
+    <div class="field">
+      <label for="Hardrive">Hardrive</label>
+      {{input value=Hardrive id="Hardrive"}}
+    </div>
+
+    <button class="primary ui button" {{action 'saveComputer' computer}}>Add Computer</button>
+  </form>
+
+</div>
