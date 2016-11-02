@@ -1,8 +1,15 @@
+
 {{#each model as |computer|}}
-  {{#link-to 'editComputer' computer.id}} {{computer.price}} {{/link-to}}
-  {{computer.make}}
-  {{computer.type}}
-  {{computer.RAM}}
+  <div class="ui container">
+    {{#link-to 'editComputer' computer.id}} 
+    {{computer.make}}
+    {{computer.type}}
+    {{computer.CPU}}
+    {{computer.Hardrive}}
+    {{computer.RAM}}
+    {{computer.price}}
+    {{/link-to}}
+  </div>
 {{/each}}
 
 <br>
