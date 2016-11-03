@@ -5,14 +5,7 @@
 
 {{display-cart item}}
 
-<div class="ui segment">
-  <h2>Our Computers</h2>
-{{#each model as |computer|}}
-  <div class="ui segment">
-    {{computer-tile computer=computer}}
-  </div>
-{{/each}}
-</div>
+{{computer-detail computers=model}}
 
 <br>
 <br>
