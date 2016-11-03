@@ -3,6 +3,14 @@ var total = 0;
 export default Ember.Component.extend({
   shoppingCart: Ember.inject.service(),
 
+  computerInv: Ember.computed('computer.inventory', function(){
+    if(this.get('computer.inventory')< 4){
+      return "Low Inventory!";
+    } else{
+      return "In Stock.";
+    }
+  }),
+
   actions: {
 
     addToCart(item) {
@@ -17,6 +25,7 @@ export default Ember.Component.extend({
 
         item.set('inventory',newInven);
         this.get('shoppingCart').add(item);
+        item.save();
       }
 
     },
