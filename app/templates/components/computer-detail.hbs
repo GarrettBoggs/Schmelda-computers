@@ -2,7 +2,8 @@
   <h2>Our Computers</h2>
 {{#each sortedComputers as |computer|}}
   <div class="ui segment">
-    {{computer-tile computer=computer}}
+    {{computer-tile computer=computer}} {{computer-inventory computer}}
   </div>
+
 {{/each}}
 </div>

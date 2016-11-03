@@ -14,7 +14,8 @@ export default Ember.Route.extend({
       make: this.get('make'),
       RAM: this.get('RAM'),
       CPU: this.get('CPU'),
-      Hardrive: this.get('Hardrive')
+      Hardrive: this.get('Hardrive'),
+      inventory:  parseInt(this.get('inventory'))
     };
     Object.keys(params).forEach(function(key) {
       if(params[key]!==undefined) {

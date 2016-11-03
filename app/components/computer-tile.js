@@ -6,10 +6,19 @@ export default Ember.Component.extend({
   actions: {
 
     addToCart(item) {
-      this.get('shoppingCart').add(item);
-      total += item.get('price');
-      // console.log(total);
-      return total;
+
+      var currentInv = item.get('inventory');
+      if(currentInv > 0)
+      {
+        var newInven = currentInv - 1;
+        console.log(item.get('price'));
+        console.log(item.get('inventory'));
+        console.log(newInven);
+
+        item.set('inventory',newInven);
+        this.get('shoppingCart').add(item);
+      }
+
     },
   }
 });

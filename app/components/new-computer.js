@@ -10,6 +10,7 @@ export default Ember.Component.extend({
         CPU: this.get('CPU'),
         RAM: this.get('RAM'),
         Hardrive: this.get('Hardrive'),
+        inventory: parseInt(this.get('inventory')),
       };
       this.sendAction('saveComputer', params);
     }

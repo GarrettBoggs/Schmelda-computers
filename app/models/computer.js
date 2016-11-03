@@ -6,5 +6,6 @@ export default DS.Model.extend({
     make: DS.attr(),
     RAM: DS.attr(),
     CPU: DS.attr(),
-    Hardrive: DS.attr()
+    Hardrive: DS.attr(),
+    inventory: DS.attr()
 });
